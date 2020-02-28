@@ -2,7 +2,7 @@ $(function() {
     $(".create-form").on("submit", function(event) {
       event.preventDefault();
   
-      var newBurger = {
+      let newBurger = {
         burger_name: $("#newburger")
           .val()
           .trim(),
@@ -21,8 +21,8 @@ $(function() {
     $(".eatburger").on("click", function(event) {
       event.preventDefault();
   
-      var id = $(this).data("id");
-      var devouredState = {
+      let id = $(this).data("id");
+      let devouredState = {
         devoured: 1
       };
   
@@ -38,7 +38,7 @@ $(function() {
     $(".trashburger").on("click", function(event) {
       event.preventDefault();
   
-      var id = $(this).data("id");
+      let id = $(this).data("id");
   
       // Send the DELETE request.
       $.ajax({
